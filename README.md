@@ -39,7 +39,7 @@ In order to have true parallelism use [pull-flow](https://github.com/dominictarr
 ```js
 var pull = require("pull-stream");
 var flow = require("pull-flow");
-var substream = require("../");
+var substream = require("pull-substream");
 
 // Dummy async stream.
 var asyncStream = pull.Through(function (read) {
