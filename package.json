@@ -1,6 +1,6 @@
 {
   "name": "pull-substream",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "./substream.js",
   "description": "Multiple execution contexts for pull substreams.",
   "homepage": "https://github.com/tounano/pull-substream/",
@@ -23,7 +23,8 @@
   },
   "dependencies": {
     "pull-stream": "latest",
-    "pull-pushable": "latest",
+    "pull-spawn": "latest",
+    "pull-robin": "latest",
     "underscore": "latest"
   }
 }

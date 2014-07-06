@@ -1,5 +1,5 @@
 var pull = require("pull-stream");
-var flow = require("pull-flow");
+var flow = require("pull-control");
 var substream = require("../");
 
 
@@ -17,6 +17,7 @@ var asyncStream = pull.Through(function (read) {
 pull(
   pull.values([1,2,3,4,5,6]),
   substream( function (msg) {
+    console.log("msg",msg)
     return pull(
       asyncStream(),
       asyncStream()
